@@ -1,4 +1,9 @@
 #!/bin/bash
+#
+# To run, call as root:
+# bash <(curl -sL https://github.com/varlibjames/handy-scripts/raw/master/install-veeam.sh)
+#
+
 
 function InstallVeeam {
     wget -O /tmp/veeamrepo.deb https://download2.veeam.com/veeam-release-deb_1.0.7_amd64.deb
@@ -7,12 +12,11 @@ function InstallVeeam {
     apt install -y veeam nfs-common
 }
 
-
-
-if (whoami != root)
+if [ "$EUID" -ne 0 ]
   then echo "Please run as root"
-
-  else (InstallVeeam)
+  exit
 fi
+
+InstallVeeam
 
 exit
