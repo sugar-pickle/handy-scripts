@@ -1,7 +1,7 @@
 #!/bin/bash
 #
 # To run, call as root:
-# bash <(curl -sL https://github.com/jamescarter0121/handy-scripts/raw/master/install-veeam.sh)
+# bash <(curl -sL https://github.com/sugar-pickle/handy-scripts/raw/master/install-veeam.sh)
 #
 
 
