@@ -3,7 +3,7 @@
 # Installs and configures the zabbix agent on a linux host
 #
 # To run, call as root:
-# bash <(curl -sL https://github.com/carterx86/handy-scripts/raw/master/install-zabbix-agent.sh)
+# bash <(curl -sL https://github.com/sugar-pickle/handy-scripts/raw/master/install-zabbix-agent.sh)
 #
 
 function InstallZabbix() {
