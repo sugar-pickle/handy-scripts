@@ -7,9 +7,9 @@
 #
 
 function InstallZabbix() {
-  wget https://repo.zabbix.com/zabbix/6.4/debian/pool/main/z/zabbix-release/zabbix-release_6.4-1+debian11_all.deb
-  dpkg -i zabbix-release_6.4-1+debian11_all.deb
-  rm zabbix-release_6.4-1+debian11_all.deb
+  wget https://repo.zabbix.com/zabbix/6.5/debian/pool/main/z/zabbix-release/zabbix-release_6.5-1%2Bdebian12_all.deb
+  dpkg -i zabbix-release_6.5-1%2Bdebian12_all.deb
+  rm zabbix-release_6.5-1%2Bdebian12_all.deb
   apt update
   apt remove zabbix-agent -y
   apt install -y zabbix-agent2
